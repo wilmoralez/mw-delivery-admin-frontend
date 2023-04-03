@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracion</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/controlador.js"></script>
+  
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+
+
+    <!-- Archivos de scripts de Bootstrap-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+   <script src="https://kit.fontawesome.com/6f0a417da2.js" crossorigin="anonymous"></script>
+</head>
+<body onload="mostrarSeccion(0)">
+    <div id="barra-lateral">
+       <div id="logo">
+        <div class="banner" style="color:BLACK;">
+            <img id="logo" src="img/logo_MW4.png" alt="logo MW FashionDelivery">
+            <h6 style="margin: 0%">MW Fashion Delivery</h6>
+           
+            <p>Administradores</p>
+        </div>
+       </div>
+       <br>
+       <div id="usuario">
+        <div> <i class="fas fa-user fa-2x" style="font-size: 7rem;"></i></div>
+            <div>Administrador</div>
+
+       </div>
+       <br>
+       <div id="controles">
+        <div class="tarjeta-opciones" onclick="mostrarSeccion(0);">
+            <i class="fas fa-building"></i>
+            Empresas
+        </div>
+        <div class="tarjeta-opciones" onclick="mostrarSeccion(2);">
+            <i class="fas fa-motorcycle"></i>
+            Motoristas
+        </div>
+        <div class="tarjeta-opciones">
+            <i class="fas fa-chart-bar"></i>
+            Reportes
+        </div>
+
+       </div>
+    </div>
+
+    <div id="contenido sitio">
+        <section id="0" name="dashboard" >
+            <div class="container">
+                <form>
+                  <h2>Registro de Empresas</h2>
+                  
+                  <div class="mb-3">
+                    <h3>Información de Enlace</h3>
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="apellido" class="form-label">Apellido:</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido" required>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="cargo" class="form-label">Cargo:</label>
+                        <input type="text" class="form-control" id="cargo" name="cargo" required>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="mb-3">
+                    <h3>Acerca de la Empresa</h3>
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <label for="nombre_empresa" class="form-label">Nombre de la Empresa:</label>
+                        <input type="text" class="form-control" id="nombre_empresa" name="nombre_empresa" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="telefono_empresa" class="form-label">Teléfono:</label>
+                        <input type="tel" class="form-control" id="telefono_empresa" name="telefono_empresa" required>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="ubicacion_empresa" class="form-label">Ubicación:</label>
+                        <input type="text" class="form-control" id="ubicacion_empresa" name="ubicacion_empresa" required>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="descripcion_empresa" class="form-label">Descripción:</label>
+                        <textarea class="form-control" id="descripcion_empresa" name="descripcion_empresa" required></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-primary">Registrar</button>
+                </form>
+              
+                <div>
+                  <h2>Empresas Registradas</h2>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Aquí se mostrarían las empresas registradas -->
+                    </tbody>
+                  </table>
+                </div>
+              
+                <div>
+                  <h2>Administración de Productos</h2>
+                  <!-- Aquí se incluiría la sección de administración de productos -->
+                  <button type="button" onclick="mostrarSeccion(1);" class="btn btn-primary">Administrar Productos</button>
+                </div>
+              </div>
+              
+        </section>
+
+        <section id="1" name="registro-productos">
+            <h2>Administración de Productos</h2>
+            <form>
+                <div class="form-group">
+                  <label for="descripcion">Descripción:</label>
+                  <input type="text" class="form-control" id="descripcion" placeholder="Ingrese la descripción del producto">
+                </div>
+                <div class="form-group">
+                  <label for="codigo">Código:</label>
+                  <input type="text" class="form-control" id="codigo" placeholder="Ingrese el código del producto">
+                </div>
+                <div class="form-group">
+                  <label for="precio">Precio unitario:</label>
+                  <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input type="number" class="form-control" id="precio" placeholder="Ingrese el precio unitario del producto">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="cantidad">Cantidad disponible:</label>
+                  <input type="number" class="form-control" id="cantidad" placeholder="Ingrese la cantidad disponible del producto">
+                </div>
+                <div class="form-group">
+                  <label for="tallas">Tallas:</label>
+                  <select class="form-control" id="tallas">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="sexo">Sexo:</label>
+                  <select class="form-control" id="sexo">
+                    <option value="mujer">Mujer</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="unisex">Unisex</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="categoria">Categoría:</label>
+                  <select class="form-control" id="categoria">
+                    <option value="ropa">Ropa</option>
+                    <option value="zapatos">Zapatos</option>
+                    <option value="accesorios">Accesorios</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Registrar</button>
+              </form>
+              
+        </section>
+
+        <section id="2" name="administración-motoristas">
+            <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Administración de motoristas</h4>
+                </div>
+                <div class="card-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Nombre motorista</th>
+                        <th>Edad</th>
+                        <th>Teléfono</th>
+                        <th>Información</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Juan Pérez</td>
+                        <td>25</td>
+                        <td>555-1234</td>
+                        <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#infoModal"><i class="fas fa-info"></i></button></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Maria Rodriguez</td>
+                        <td>28</td>
+                        <td>555-5678</td>
+                        <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#infoModal"><i class="fas fa-info"></i></button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="infoModalLabel">Información del motorista</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p><strong>ID:</strong> 1</p>
+                      <p><strong>Nombre motorista:</strong> Juan Pérez</p>
+                      <p><strong>Edad:</strong> 25</p>
+                      <p><strong>Teléfono:</strong> 555-1234</p>
+                      <p><strong>Dirección:</strong> Calle 123, San José</p>
+                      <p><strong>Horario:</strong> Lunes a Viernes, de 8:00 a.m. a 5:00 p.m.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Aceptar</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Rechazar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+        </section>
+    </div>
+
+</body>
+</html>

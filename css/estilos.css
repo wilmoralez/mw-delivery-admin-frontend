@@ -1,0 +1,58 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+}
+#barra-lateral{
+height:100%;
+display: grid;
+grid-template-rows: 1fr 1fr 1fr;
+background-color: #d4b189;
+
+
+}
+
+.banner{
+    color: white; 
+    text-align: center;
+    width: auto;
+    margin-left: 50px;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  
+}
+
+#usuario{
+    width: auto;
+    height: auto;
+    margin-left: 3rem;
+}
+
+#logo{
+    width: 151px;
+    height: 150px;
+    margin-right: 5rem;
+  }
+
+#controles{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+
+
+.tarjeta-opciones{
+    margin:0.5rem;
+    padding:0.5rem;
+    outline:auto;
+   text-align: center;
+}
+
+.tarjeta-opciones:hover{
+    color:#6d9773;
+    cursor:pointer;
+}
+
+section{
+    margin:3rem;
+}
