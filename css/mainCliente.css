@@ -1,0 +1,193 @@
+
+
+/*Landing Page --------------------------------------------------*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#slider {
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+
+#slider .imgLanding {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+#slider .imgLanding.active {
+	opacity: 1;
+}
+
+#info {
+	background-color: #FFF;
+    color: #17382B;
+	padding: 20px;
+	flex-basis: 100%;
+	text-align: center;
+}
+
+.pLanding{
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+}
+
+.contenedor-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Pagina de inisio de sesion ------------------------------------*/
+
+.contenedor-pgInicio{
+    background-image: url(../img/fondo_inicioSesion.jpg);
+    opacity: 90%;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed;
+    margin: 0%;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.banner{
+    color: white; 
+    text-align: center;
+    padding: 2rem;
+
+}
+
+#logo{
+    width: 130px;
+    height: 130px;
+    margin-bottom: 0%;
+    margin-top: 1rem;
+
+}
+
+form{
+    margin-top: 30px;
+}
+
+.form-inicioSesion{
+    max-width: 100%;
+    height: 420px;
+    background-color:  #CCCCCC;
+    color: #17382B;
+    border-radius: 25px 25px 0px 0px;
+    padding: 2rem;
+    background-attachment: fixed;
+}
+
+.form-control{
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.btn-inicio-sesion{
+    color: #17382B;
+    background-color: #FFBA00;
+    border-radius: 23px;
+    padding: 10px 20px 10px 20px;
+    border-style: none;
+    font-weight:bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    
+}
+
+.contenedor{
+    text-align: center;
+}
+
+/*Formulario de Registro para Clientes---------------------------*/
+#navbar-registro{
+    height: 66px;
+    background-color: #FFBA00;
+    border-radius: 0px 0px 25px 25px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.iconos-navegacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-navegacion{
+    font-size: 25px;
+    color: #17382B;
+    font-weight: bold;
+}
+
+.img-usuario{
+    height: 90px;
+    margin: 2rem;
+}
+
+.form-registro{
+    max-width: 100%;
+    height: 730px;
+    margin: 10px 20px 20px 20px;
+    border-radius: 25px;
+    background-color:#CCCCCC;
+    color: #17382B;
+    padding: 0.5rem 1rem 0 1rem;
+    font-weight: bold;
+}
+
+.form-check-label{
+    font-weight: normal;
+}
+
+/*Categoría Tiendas----------------------------------------------*/
+.contenedor-categorias{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.btn-tienda{
+    height: 70px;
+    width:  250px;
+    background-color: #D4B28A;
+    border-radius: 10px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4),   0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.foot-categorias{
+    height: 115px;
+    background-color:#FFBA00;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+
+
+

@@ -1,0 +1,124 @@
+/* Estilos en común */
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Varta&display=swap');
+
+body{
+    font-family: 'Varta', sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+h3{
+    text-align: center;
+    color: #17382B;
+}
+
+.navbar-categorias{
+    height: 66px;
+    background-color: #6D9773;
+    border-radius: 0px 0px 25px 25px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.btn-atras{
+   color: white; 
+   font-size: 25px;
+   font-weight: bold;
+   padding: 1rem;
+   margin: 0;
+}
+
+#foot-categorias{
+    height: 115px;
+    background-color:#FFBA00;
+    padding: 1rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.redes-sociales{
+    color: #17382B;
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+
+.genero{
+    border-radius: 23px;
+    color: white;
+    width: 260px;
+    height: 150px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;;
+}
+
+.contenedor-categorias{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.producto{
+    border-radius: 23px;
+    width: 200px;
+    height: 125px;
+    color: #FFBA00;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#categoria-ropa, #categori-zapatos, #categoria-accesorios{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    padding: 0;
+}
+
+.btn-comprar{
+    color: white;
+    background-color: #D4B28A !important;
+    border-style: none !important;
+}
+
+.btns-modal{
+    background-color:#FFBA00 !important;
+    border-style: none !important;
+}
+
+.contenedor-carrito{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn-carrito{
+    background-color: #D4B28A !important;  
+    font-size: 25px !important;
+    border-style: none !important;
+
+}

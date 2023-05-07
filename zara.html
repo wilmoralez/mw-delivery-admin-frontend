@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo_MW4.png">
+    <script src="https://kit.fontawesome.com/31ec04f5b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>MW Zara</title>
+</head>
+
+
+<body>
+    <!-- Categoría género -->
+    <section id="0" name="categoria-genero">
+            <nav class="navbar-categorias">
+                <i class="fas fa-bars"></i>
+                <i class="fa-solid fa-angles-left" onclick="volverATiendas('index-cliente.html#3')" ></i>
+                <i class="fas fa-user"></i>
+            </nav>
+
+            <div id="zara" class="contenedor-categorias" >
+            <div>
+            <img style="width:90px; height: 30px; margin: 2rem;"  src="img/logo_Zara.png" alt="Zara">
+            </div>
+            <div class="genero" style="background-image:url(img/portadaM-zara.jpg)" onclick="mostrarSeccion(1)">
+                <h1>MUJER</h1>
+            </div>
+            <br>
+            <div class="genero" style="background-image:url(img/portadaH-zara.jpg)" onclick="mostrarSeccion(2)">
+                <h1>HOMBRE</h1>
+            </div>
+            </div>
+        </section>
+
+     <!-- Categria de productos para Mujeres -->
+     <section id="1" name="categoria-productos-Mujeres">
+        <nav class="navbar-categorias">
+            <i class="fas fa-bars"></i>
+            <i class="fa-solid fa-angles-left" onclick="mostrarSeccion(0)"></i>
+            <i class="fas fa-user"></i>
+        </nav>
+        <div class=" contenedor-categorias">
+            <div>
+            <img style="width:90px; height: 30px; margin: 2rem;"  src="img/logo_Zara.png" alt="Zara">
+            </div>
+            <div class="producto" style="background-image:url(img/ropaM-zara.jpg)">
+                <h3>ROPA</h3>
+            </div>
+            <br>
+            <div class="producto" style="background-image:url(img/zapatosM-zara.jpg)">
+                <h3>ZAPATOS</h3>
+            </div>
+            <br>
+            <div class="producto" style="background-image:url(img/accesoriosM-zara.jpg)">
+                <h3>ACCESORIOS</h3>
+            </div>
+            <br>
+        </div>
+    </section>
+
+    <!-- Categria de productos para Hombres -->
+    <section id="2" name="categoria-productos-Hombres">
+        <nav class="navbar-categorias">
+            <i class="fas fa-bars"></i>
+            <i class="fa-solid fa-angles-left" onclick="mostrarSeccion(0)" ></i>
+            <i class="fas fa-user"></i>
+        </nav>
+        <div class=" contenedor-categorias">
+            <div>
+            <img style="width:90px; height: 30px; margin: 2rem;"  src="img/logo_Zara.png" alt="Zara">
+            </div>
+            <div class="producto" style="background-image:url(img/ropaH-zara.jpg)">
+                <h3>ROPA</h3>
+            </div>
+            <br>
+            <div class="producto" style="background-image:url(img/zapatosH-zara.jpg)">
+                <h3>ZAPATOS</h3>
+            </div>
+            <br>
+            <div class="producto" style="background-image:url(img/accesoriosH-zara.jpg)">
+                <h3>ACCESORIOS</h3>
+            </div>
+            <br>
+        </div>
+    </section>
+
+    <div id="foot-categorias">
+        <b style="color: #17382B;" >¡Siguenos!</b>
+        <div class="redes-sociales">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-tiktok"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <div style="text-align: center;">
+        <span>Política de Privacidad</span>
+        <span> | Condiciones de compra</span>
+        </div>
+    </div>
+
+
+
+<!--CDN Links-->
+<script src="js/controlador.js" ></script>
+<script src="js/controlador-tienda.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
