@@ -2,9 +2,10 @@ body{
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: auto;
+    height:100%;
 }
 #barra-lateral{
-height:100%;
+height:100vh;
 display: grid;
 grid-template-rows: 1fr 1fr 1fr;
 background-color: #d4b189;
